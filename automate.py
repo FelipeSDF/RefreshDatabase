@@ -6,11 +6,10 @@ import time
 import shutil
 from dotenv import load_dotenv
 from pathlib import Path
-from selenium.webdriver.chrome.options import Options
 
 import pyautogui
 from gui.gui import Gui
-from web import ChromeDriver
+from web import ChromeDriver, EdgeDriver
 
 env = load_dotenv()
 
@@ -19,7 +18,7 @@ class Control():
     self.url = url
     self.gui = Gui()
     
-    self.driver = ChromeDriver()
+    self.driver = EdgeDriver()
     
     self.driver.driver.maximize_window()
     
