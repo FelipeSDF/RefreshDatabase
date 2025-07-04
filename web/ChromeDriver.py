@@ -6,8 +6,6 @@ import os
 class ChromeDriver:
   def __init__(self):
       self.chrome_options = Options()
-      # self.chrome_options.add_argument(r"--user-data-dir=C:\Users\felip\AppData\Local\Google\Chrome\User Data")
-      # self.chrome_options.add_argument(r"--profile-directory=Default")
       
       prefs = {
           "download.default_directory": os.path.join(os.getcwd(), 'downloads/xlsx/'),
