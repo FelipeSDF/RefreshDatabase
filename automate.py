@@ -62,7 +62,7 @@ class MagniFinanceControl(Control):
     
     sleep(5)
     
-    self.saveAllInDrive()
+    # self.saveAllInDrive()
     
     self.stop()
   
@@ -130,9 +130,10 @@ class QuickBooksControl(Control):
 
     time.sleep(5)
     
-    self.stop()
 
     self.saveAllInDrive()
+    
+    self.stop()
     
     return True
     
@@ -289,4 +290,3 @@ class ReplacerControl():
         shutil.move(src, dst)
 
 replacer = ReplacerControl('G:/Drives compartilhados/BI Management/New/BI/Relatórios/Base Compartilhadas/Financeiro/testing')
-replacer.replace()
